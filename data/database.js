@@ -8,15 +8,12 @@ const Like = require("../model/likes");
 
 // MongoDB connection URI
 const uri =
-  "mongodb+srv://sanyasrivastava08092004:xoV9CH104YB2s2pF@cluster0.utron.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+  "mongodb+srv://sanyasrivastava08092004:xoV9CH104YB2s2pF@cluster0.utron.mongodb.net/?retryWrites=true&w=majority&appName=Cosmic";
 
 // Connect to MongoDB using Mongoose
 async function connectToDatabase() {
   try {
-    await mongoose.connect(uri, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    await mongoose.connect(uri);
     console.log("Connected successfully to MongoDB");
   } catch (error) {
     console.error("Error connecting to MongoDB:", error.message);
