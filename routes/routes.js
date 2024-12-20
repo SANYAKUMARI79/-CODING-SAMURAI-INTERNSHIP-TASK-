@@ -6,8 +6,8 @@ const User = require("../model/users"); // Ensure this path is correct
 const Comment = require("../model/comments"); // Ensure this path is correct
 const Like = require("../model/likes"); // Ensure this path is correct
 
-const authenticateToken = require("../middleware/auth"); // Ensure this path is correct
-const upload = require("../middleware/upload.js"); // Ensure this path is correct
+const authenticateToken = require("../data/middleware/auth.js"); // Ensure this path is correct
+const upload = require("../data/middleware/upload.js"); // Ensure this path is correct
 const Post = require("../model/posts"); // Adjust the path as necessary
 const mongoose = require("mongoose");
 
